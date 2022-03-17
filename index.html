@@ -34,79 +34,16 @@
             <div>
                 <h2 class="ello" > Our Planet </h2>
                 <h2 class="jello" > is dying. </h2>
-                <div>
+                <div style="padding-bottom:80%;">
                     <img class = "mount" src="https://i.imgur.com/3H0vW73.png">
                 </div>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
             </div>
             <br>
             <br>
             <h2 class = "most enter z5">THE MOST <br>IMPORTANT NUMBER <br>IN THE WORLD</h2>
             <div id="demo" class="center z5">
                 <script class="timer">
-                    // From W3 Schools
+                    // Idea from W3 Schools, edited in order to create a function to tell the current hour
                     // Set the date we're counting down to
                     var countDownDate = new Date("Dec 31, 2027 07:00:00").getTime();
                     
@@ -139,60 +76,27 @@
                     }, 1000);
                 </script>
             </div>
-            <h3 class="no enter z5"> When this timer reaches zero our planet will have gone beyond the point of no return.<br> We will have affected it to the point where we can never return it to the state it was before we existed. 
+            <h3 class="no enter z5" style="margin-bottom:21%;"> When this timer reaches zero our planet will have gone beyond the point of no return.<br> We will have affected it to the point where we can never return it to the state it was before we existed. 
             </h3>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
+
             <h3 class="mountgradient"></h3>
-            <div style="display: block;">
+            <div style="display: block;margin-bottom:13%";>
                 <a href="https://www.conservation.org/stories/ocean-pollution-11-facts-you-need-to-know" target="_blank" style="text-decoration: none;">
                     <img  class ="enter" src="abandonedfis.jpg" style="height: 300px; margin-left:3%;  float:left; ">
                     <h3 class="enter center" style=" left: 45%; padding-top: 5%;font-family: 'Lato', sans-serif; ">By 2050, ocean plastic will <br> outweigh all of the ocean’s fish.</h3>
                 </a>
             </div>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
+ 
             <div style="display: block;">
                 <a href="https://www.imperial.ac.uk/stories/climate-action/" target="_blank" style="text-decoration: none;">
                     <img  class ="enter" src="https://i.imgur.com/HtL0Jb8.jpg" style="height: 300px; margin-right:3%;  float:right; marging-top: 10%;">
                     <h3 class="enter center" style=" padding-top: 5%; font-family: 'Lato', sans-serif;">Take action in your own community <br> because no one else will.</h3>
                 </a>
             </div>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <h3 style="display: block; font-family: 'Lato', sans-serif;" class="enter center">
+
+            <h3 style="display: block; font-family: 'Lato', sans-serif;margin-bottom:10%; margin-top:10%;" class="enter center">
             Visit <a class="link" target="_blank" style="text-decoration: none; color: lightblue;" href= "https://climate.nasa.gov/evidence/">Nasa.Gov</a> For More Information
             <h3>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
             <h1 style="font-family: 'Lato', sans-serif;" class="center">No matter how you look at it<br> One thing remains true</h1>
             <h2 class="cello" > There is No Planet B. </h2>
             <div style="scroll-snap-type: y proximity;">
@@ -226,9 +130,8 @@
                             });
                     });
                     $(document).ready(function() {
-                            // Transition effect for navbar 
                             $(window).scroll(function() {
-                              // checks if window is scrolled more than 500px, adds/removes solid class
+                              // checks if window is scrolled more than 500px, adds/removes class
                               if($(this).scrollTop() > 50) { 
                                   $('.jello').addClass('text-flicker-in-glow');
                               } else {
@@ -239,14 +142,8 @@
                     (function($) {
                     
                       /**
-                       * Copyright 2012, Digital Fusion
-                       * Licensed under the MIT license.
-                       * http://teamdf.com/jquery-plugins/license/
-                       *
-                       * @author Sam Sehnert
-                       * @desc A small plugin that checks whether elements are within
-                       *     the user visible viewport of a web browser.
-                       *     only accounts for vertical position, not horizontal.
+                      Checks if an item is within the viewport.
+                      Only accounts for vertical position 
                        */
                     
                       $.fn.visible = function(partial) {
